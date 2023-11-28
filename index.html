@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sadaat Tameem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../static/animate.css">
+	<link rel="stylesheet" href="../static/flexslider.css">
+	<link rel="stylesheet" href="../static/fonts/icomoon/style.css">
+
+	<link href="../static/assets/favicon.ico" rel="icon">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../static/bootstrap.css">
+	<link rel="stylesheet" href="../static/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+<!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+
+<link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css">
+
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<section class="site-hero" style="background-image: url(../static/assets/images/image_1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center" >
+				<div class="col-md-10 text-center pt-5">
+					<h1 class="site-heading site-animate" style=" font-size: 80px; padding-bottom: 250px;" >Hello, I'm</h1>
+					
+					<a href="#" class="glitch"  data-glitch="Sadaat Tameem">Sadaat Tameem</a>
+						
+						<span class="text_1"><b>Innovation Catalyst: Strategic Business Analyst </b></span>
+						<span class="text_2"><b>Insights in Every Word: Let's Talk Data </b>
+					</span>	
+					
+					
+					<STYle>
+						@keyframes typewriter {
+						0%, 100% {
+							width: 0;
+						}
+						20%, 80% {
+							width: 32em;
+						}
+						}
+
+						@keyframes caret {
+						0%, 100% {
+							opacity: 0;
+						}
+						80% {
+							opacity: 1;
+						}
+						}
+
+
+						@keyframes text2 {
+							0%, 50%, 100% {
+								width: 0;
+							}
+							
+							60%, 90% {
+								width: 31em;
+							}
+							}
+							@keyframes text1 {
+							0%, 50%, 100% {
+								width: 0;
+							}
+							10%, 40% {
+								width: 38em;
+							}
+							}
+							
+						
+
+							.text_1 {
+							animation: text1;
+							}
+							.text_2 {
+							animation: text2;
+							}
+
+							.text_0 {
+							overflow: hidden;
+							white-space: nowrap;
+							animation: typewriter;
+							display: inline-block;
+							position: relative;
+							animation-duration: 10s;
+							animation-timing-function: steps(25, end);
+							font-family: 'Audiowide', cursive;
+							animation-iteration-count: 0;
+							}
+
+
+							.text_0::after {
+							content: "|";
+							position:relative;
+							color:green;
+							right: 0;
+							animation: caret infinite;
+							animation-duration: 1s;
+							animation-timing-function: steps(1, end);
+							}
+
+							.text_1, .text_2 {
+							overflow: hidden;
+							font-size: 25px;
+							color:white;
+							white-space: nowrap;
+							display: inline-block;
+							position: relative;
+							animation-duration: 15s;
+							animation-timing-function: steps(75, end);
+							animation-iteration-count: infinite;
+							}
+							.text_1::after, .text_2::after {
+							content: "_";
+							position: absolute;
+							right: 0;
+							color:green;
+							animation: caret infinite;
+							animation-duration: 1s;
+							animation-timing-function: steps(1, end);
+							}
+
+					</STYle>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- section -->
+
+
+
+
+
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>My <strong>Portfolio</strong></h2>
+				</div>
+			</div>
+			<div class="filters">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".packaging">Machine Learning</li>
+					<li data-filter=".mockup">Analytics</li>
+					<li data-filter=".photography">Vizualization</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/TA_2.jpg" alt="">
+							</div>
+							<a href="../static/assets/images/TA_2.jpg" class="img-pop-up">  
+								
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/sadaattameem/Text-Analytics/blob/main/Text%20Analytics%20Project%20-%20Blog%20Post.pdf"><h4>Decoding Voices: Text Analytics on Reviews of IT Companies</h4>
+							<!-- <div class="cat">Tech Stack: Python Selenium,R Packages: tidymodels,tidyverse,tidytext,topicmodels,ggplot  </div> -->
+							<!-- <div class="cat"><strong>Tech Stack:</strong> Python: Selenium, Pandas, Numpy, Webdriver R Packages: <span class="code">tidymodels, tidyverse, tidytext, topicmodels, ggplot</span></div> -->
+							<div class="tech-stack-heading" >
+								<h6 style="text-decoration: underline; color: white; font-weight: bold;">Tech Stack</h6>
+								<div class="stack-section" style="color: hsl(60, 100%, 80%);">
+									<strong>Python:</strong> Selenium, Pandas, Numpy, Webdriver
+								</div>
+								<div class="stack-section">
+									<strong>R Packages:</strong> 
+									<span class="code">tidymodels, tidyverse, tidytext, topicmodels, ggplot</span>
+								</div>
+							</div>
+						</a>
+						</div>                                         
+					</div>
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/ecommer_1.png" alt="">
+							</div>
+							<a href="../static/assets/images/ecommer_1.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/sadaattameem/EDA-Python-/blob/main/EDA%20and%20Vizualization%20-new.ipynb"><h2 class="title-heading"></h2><h4>Ecommerce Data Analysis</h4>
+							<div class="cat">Data Analysis</div>
+							<div class="tech-stack-heading">
+								<h6 style="text-decoration: underline; color: white; font-weight: bold;">Tech Stack</h6>
+								<div class="stack-section">
+								</div>
+								<div class="stack-section" style="color: yellow;">
+									<strong>Python Packages:</strong> 
+									<span class="code">Seaborn, matplotlib, numpy, pandas, Plotly </span>
+								</div>
+							</div>
+						</div>                                         
+					</div>                            
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/Pred_2.jpeg" alt="">
+							</div>
+							<a href="../static/assets/images/p3.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a> 
+
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/sadaattameem/Soccer-player-prediction-/blob/main/Soccer%20Player%20Prediction%20-%20By%20Sadaat%20Tameem%20.ipynb"><h2 class="title-heading"></h2><h4>Soccer Player Salary Prediction</h4>
+							<div class="cat">Machine Learning</div>
+							<div class="tech-stack-heading">
+								<h6 style="text-decoration: underline; color: white; font-weight: bold;">Tech Stack</h6>
+								<div class="stack-section" style="color: hsl(60, 100%, 80%);">
+									<strong>Python:</strong> Selenium, Pandas, Numpy, Webdriver, matplotlib.pyplot, statsmodels.api
+									,scipy.stats
+									
+									,seaborn
+					
+									
+									, statsmodels.formula.api, ols
+									, statsmodels.formula.api 
+								</div>
+						
+							</div>							
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all photography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/Music.png" alt="">
+							</div>
+							<a href="../static/assets/images/Music.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div> 
+						<div class="p-inner">
+							<a href="https://public.tableau.com/app/profile/sadaat.tameem/viz/MusicSalesAnalysis-ProjectBySadaatTameem/MusicSalesStory?publish=yes"><h4>Music Sales Analysis Project</h4>
+							<div class="cat">Tableau Vizualization</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all typography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/noimage.jpg" alt="">
+							</div>
+							<a href="../static/assets/images/.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<h4> </h4>
+							<div class="cat"> </div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all photography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/Viz.png" alt="">
+							</div>
+							<a href="../static/assets/images/Viz.png" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+						<div class="p-inner">
+							<a href="https://du.digication.com/sadaat-tameem-analyst/tabealu-great-goods-project" target="_blank">
+							<h4>Vizualization</h4>
+							<div class="cat">Power BI Vizualization</div>
+						</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- .section -->
+
+	
+	<section class="site-section " id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>My <strong>Resume</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="mb-5">Education</h2>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> September 2022 - Present</span>
+						<h3>Masters in Business Analytics</h3>
+						<p>
+							University of Denver - Daniels College of Business<br>
+							CGPA:  3.98
+						</p>
+						<span class="school">Denver, CO</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> June 2015- July 2019 </span>
+						<h3>Bachelors in Mechanical Engineering</h3>
+						<p>
+							Visvesvaraya Technological University<br>
+							CGPA: 3.6</p>
+						<span class="school">Kasia</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2015</span>
+						<h3>High School (CBSE Board)</h3>
+						<p>	Delhi Public School</p>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+
+					<h2 class="mb-5">Experience</h2>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> September 2022</span>
+						<h3>Research Assistant</h3>
+						<p>Increased campus enrollment revenue by 12% through building an enrollment dashboard, analyzed 20+ programs for online market breakthrough, and developed a Python code for efficient data processing</p>
+						<span class="school">University of Denver</span>
+					</div>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> August 2022</span>
+						<h3> Business Analyst - Kaplan</h3>
+						<p>Leveraged data analysis and programming expertise to enhance customer retention by 18% and improve student response efficiency by 30% for Kaplan Prep.</p>
+						<span class="school">Kaplan</span>
+					</div>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> October 2021</span>
+						<h3>Financial Data Analyst - Kredx</h3>
+						<p>Optimized financial audits by 30 hours and increased user retention by 15% through dynamic reporting and strategic engagement analysis. </p>
+						<span class="school">KredX</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span>July 2020</span>
+						<h3>Product Analyst</h3>
+						<p>Automated manual operations with Python-Selenium, reducing process time by 60%, and increased product engagement eightfold by integrating key metrics in PowerBI dashboard in collaboration with the CEO.<small></small> </p>
+						<span class="school">Dotball Interactive Private Limited</span>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- .section -->
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="../static/assets/images/Sadat.jpeg" alt="Image placeholder" class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>About <strong>Me</strong></h2>
+					</div>
+					<p class="lead">As a Programmer and Problem Solver, I've refined my skills through hands-on experience at the University of Denver and dynamic startups like Kaplan and Dotball Interactive. Armed with certifications in Azure and Python, I showcase my problem-solving prowess on platforms like HackerRank and HackerEarth. Specializing in Data Science and Cybersecurity, my genuine interest drives me to stay current with evolving technologies. Python is my go-to language, and my Azure certification reflects my readiness to adapt. I'm eager to leverage my diverse experiences and up-to-date skills to contribute to your organization's success.</p>
+					<p>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<section class="site-section pb-0"  id="section-services">
+		<div class="container">
+
+			<div class="row mb-4">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>My <strong>Services</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-browser2"></span>
+						</span>
+						<h3 class="mb-4">Text Analytics</h3>
+						<p>I specialize in text analytics, excelling in tasks like sentiment analysis, topic modeling, and understanding customer behavior through advanced machine learning models. Much like a web developer creates websites with flexibility, using Python and Flask or other tools when needed, I navigate the realm of text analytics to extract valuable insights from textual data, empowering informed decision-making. </p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-presentation"></span>
+						</span>
+						<h3 class="mb-4">Machine Learning</h3>
+						<p>Turning data chaos into predictive bliss! Navigating linear and logistic regression, clustering, naive Bayes, and topic modeling, I analyze data with precision. Experienced in extracting insights through thorough data analysis and deploying customized machine learning models. I can seamlessly translate insights into actionable solutions by putting machine learning models for real-world impact.	</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-video2"></span>
+						</span>
+						<h3 class="mb-4">Vizualization</h3>
+						<p>Data Data Data! Using tools such as Power BI, Tableau, and Python with Plotly Chart Studio, I specialize in creating advanced visualizations. From dynamic dashboards to compelling charts, my goal is to transform complex data into clear, actionable insights. I ensure that information undergoes both analysis and effective communication, empowering me to make informed decisions through impactful visual presentations.</p>
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Get <strong>In Touch</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-5 pl-md-5">
+					<h3 class="mb-5">My Contact Details</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Name</span>
+							First Name: Sadaat<br>
+							Last  Name: Tameem <br>
+						</li>
+						<li>
+							<span class="text-uppercase">Email</span>
+							sadaatt.u7@gmail.com
+						</li>
+						<li>
+							<span class="text-uppercase">Phone</span>
+							+1 7207794776
+						</li>
+						<li>
+							<span class="text-uppercase">Address</span>
+							4711 S Clay Ct<br>
+							Englewood  <br>
+							CO, United States - 80110
+						</li>
+					</ul>
+			</div>
+		</div>
+	</section>
+
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="row mb-5">
+				<p class="col-12 text-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					This website was designed and developed by  </script> Sadaat Tameem using HTML, CSS, Bootstrap, and Python Django  </a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+			</div>
+			
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<p>
+						<a href="#" class="social-item"><span class="icon-github"></span></a>
+						<a href="https://www.linkedin.com/in/sadaat-tameem/" class="social-item"><span class="icon-linkedin2"></span></a>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+
+
+
+	<script src="../static/vendor/jquery.min.js"></script>
+	<script src="../static/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="../static/vendor/popper.min.js"></script>
+	<script src="../static/vendor/bootstrap.min.js"></script>
+
+	<script src="../static/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="../static/vendor/jquery.stellar.min.js"></script>
+	<script src="../static/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="../static/custom.js"></script>
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="../static/google-map.js"></script> -->
+
+    </body>
+    </html>
